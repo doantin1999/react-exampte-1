@@ -1,0 +1,58 @@
+.task-list {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    input {
+      width: 70%;
+      padding: 5px;
+      font-size: 1em;
+    }
+    
+    button {
+      padding: 5px 10px;
+      margin: 5px;
+      cursor: pointer;
+    }
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px;
+      border-bottom: 2px solid black;
+  
+      &.done {
+        color: green;
+        font-weight: bold;
+      }
+      
+      button {
+        background-color: transparent;
+        border: none;
+        font-size: 1em;
+        cursor: pointer;
+      }
+    }
+    
+    .pagination {
+      margin-top: 10px;
+      
+      button {
+        margin: 0 5px;
+      }
+      
+      .active {
+        font-weight: bold;
+        color: red;
+      }
+    }
+}
